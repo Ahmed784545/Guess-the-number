@@ -7,18 +7,15 @@ var gameResult = document.getElementById("result")
 
 // Create random number
 var randomNum = Math.random() * 9
-var myNum = Math.floor(randomNum)
-
-// To reload page
-
+var myNum = Math.floor(randomNum + 1)
 
 // To check result
 checkBtn.addEventListener("click", function checkNum() {
     if (input.value == "") {
-        alert("Enter any number");
+        gameResult.innerText = "Enter any number";
     } else if (myNum == input.value) {
         gameResult.innerText = "Congratulations! You win";
-        scorePoints + 1;
+        scorePoints.innerText = "Score: " + 1;
         input.value = "";
     } else {
         gameResult.innerText = "Better luck, Next time";
@@ -29,5 +26,5 @@ checkBtn.addEventListener("click", function checkNum() {
 
 tryAgainBtn.addEventListener("click", function resetGame() {
     input.value = "";
+    location.reload();
 });
-

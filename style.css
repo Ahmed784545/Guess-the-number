@@ -18,7 +18,7 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  align-content: center;
+  align-items: center;
   font-family: "Poppins", Arial, sans-serif;
 }
 
@@ -70,7 +70,6 @@ body {
     width: 300px;
     height: 40px;
     justify-self: center;
-    margin-left: 40%;
     text-align: center;
     font-size: 30px;
 }
@@ -78,7 +77,6 @@ body {
     width: 300px;
     height: 45px;
     justify-self: center;
-    margin-left: 40%;
     text-align: center;
     font-size: 30px;
     background-color: var(--gold);
@@ -89,7 +87,6 @@ body {
     width: 300px;
     height: 45px;
     justify-self: center;
-    margin-left: 40%;
     text-align: center;
     font-size: 30px;
     background-color: var(--pink);
@@ -102,6 +99,20 @@ body {
   font-size: 40px;
   font-weight: 700;
   color: var(--yellow);
+  text-transform: uppercase;
+  text-shadow:
+    -3px -3px 0 #fff,
+     3px -3px 0 #fff,
+    -3px  3px 0 #fff,
+     3px  3px 0 #fff;
+  margin: 0;
+  filter: drop-shadow(0 6px 0 rgba(0,0,0,0.2));
+}
+
+#score {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--pink);
   text-transform: uppercase;
   text-shadow:
     -3px -3px 0 #fff,
