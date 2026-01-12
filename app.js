@@ -8,7 +8,6 @@ var gameResult = document.getElementById("result")
 // Create random number
 var randomNum = Math.random() * 9
 var myNum = Math.floor(randomNum)
-console.log(myNum);
 
 // To reload page
 
@@ -32,4 +31,3 @@ tryAgainBtn.addEventListener("click", function resetGame() {
     input.value = "";
 });
 
-var reload = location.reload();
